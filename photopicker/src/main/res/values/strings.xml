@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">appName</string>
+
+    <string name="images">图片</string>
+    <string name="delete">删除</string>
+    <string name="done">完成</string>
+    <string name="done_with_count">完成(%1$d/%2$d)</string>
+    <string name="image_index">%1$d/%2$d</string>
+    <string name="undo">撤销</string>
+    <string name="deleted_a_photo">删除照片</string>
+    <string name="confirm_to_delete">确认要删除?</string>
+    <string name="yes">是的</string>
+    <string name="cancel">取消</string>
+    <string name="all_image">全部图片</string>
+    <string name="over_max_count_tips">Up to %1$d photos can be selected</string>
+    <string name="image_count">%1$d</string>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ismart-android-ui.iml" filepath="$PROJECT_DIR$/ismart-android-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ismartlib/ismartlib.iml" filepath="$PROJECT_DIR$/ismartlib/ismartlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photopicker/photopicker.iml" filepath="$PROJECT_DIR$/photopicker/photopicker.iml" />
+    </modules>
+  </component>
+</project>
