@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/ismart-android-ui.iml" filepath="$PROJECT_DIR$/ismart-android-ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/ismartlib/ismartlib.iml" filepath="$PROJECT_DIR$/ismartlib/ismartlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okhttplib/okhttplib.iml" filepath="$PROJECT_DIR$/okhttplib/okhttplib.iml" />
       <module fileurl="file://$PROJECT_DIR$/photopicker/photopicker.iml" filepath="$PROJECT_DIR$/photopicker/photopicker.iml" />
     </modules>
   </component>

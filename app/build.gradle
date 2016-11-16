@@ -29,6 +29,7 @@ dependencies {
 
     compile project(':ismartlib')
     compile project(':photopicker')
+    compile project(':okhttplib')
     /*ButterKnife注解*/
     compile 'com.jakewharton:butterknife:7.0.1'
 }

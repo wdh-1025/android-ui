@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="YOUR_APP_THEME">#0CB8F6</color>
+
+    <color name="black">#000000</color> <!--黑-->
+    <color name="gray">#dcdcdc</color>
 </resources>

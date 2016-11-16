@@ -8,8 +8,9 @@
         <activity
             android:name="com.ismartlib.framework.error.activity.DefaultErrorActivity"
             android:label="app发生错误" />
-        <activity android:name=".framework.rxpermissions.ShadowActivity" />
-        <activity android:name=".framework.permissions.RequestActivity"/>
+        <activity
+            android:name=".framework.permissions.RequestActivity"
+            android:theme="@style/transcutestyle" />
     </application>
 
 </manifest>

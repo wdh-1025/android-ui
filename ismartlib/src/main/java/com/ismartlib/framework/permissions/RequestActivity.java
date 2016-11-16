@@ -40,6 +40,7 @@ public class RequestActivity extends Activity {
         RequestPermissions(getIntent());
     }
 
+
     private void RequestPermissions(Intent intent) {
         String[] permissions = intent.getStringArrayExtra("permissions");
         requestPermissions(permissions, 1);

@@ -1,1 +1,1 @@
-include ':app', ':ismartlib', ':photopicker'
+include ':app', ':ismartlib', ':photopicker', ':okhttplib'

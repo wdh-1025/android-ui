@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/ismartlib" />
+            <option value="$PROJECT_DIR$/okhttplib" />
             <option value="$PROJECT_DIR$/photopicker" />
           </set>
         </option>

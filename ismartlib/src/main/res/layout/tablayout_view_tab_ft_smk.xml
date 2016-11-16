@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:t1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tl_2"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignBottom="@+id/fl_change"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#eeeeee" />
+
+    <com.ismartlib.ui.view.tablayout.view.CommonTabLayout
+        android:id="@+id/tl_2"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        t1:tl_iconHeight="23dp"
+        t1:tl_iconWidth="23dp"
+        t1:tl_indicator_height="0dp"
+        t1:tl_textSelectColor="#56abe4"
+        t1:tl_textUnselectColor="#a9b7b7"
+        t1:tl_textsize="12sp"
+        t1:tl_underline_color="#DDDDDD"
+        t1:tl_underline_height="1dp" />
+</RelativeLayout>

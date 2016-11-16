@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_mddialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_md_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MD风格提示框" />
+
+    <Button
+        android:id="@+id/btn_md_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MD风格选择框" />
+
+    <Button
+        android:id="@+id/btn_md_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MD风格编辑框" />
+</LinearLayout>

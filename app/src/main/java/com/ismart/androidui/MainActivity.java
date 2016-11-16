@@ -2,73 +2,40 @@ package com.ismart.androidui;
 
 import android.Manifest;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.ismart.androidui.test.ImageChooseActivity;
+import com.ismart.androidui.test.MDDialogActivity;
+import com.ismart.androidui.test.OKHttpActivity;
+import com.ismart.androidui.test.TabLayoutActivity;
 import com.ismartlib.framework.permissions.Permission;
 import com.ismartlib.framework.permissions.PermissionsResult;
 import com.ismartlib.framework.permissions.ResultCallBack;
 import com.ismartlib.framework.swipebacklayout.app.SwipeBackActivity;
 
-import java.util.List;
-
-import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import me.iwf.photopicker.PhotoMultiSelectView;
-import me.iwf.photopicker.PhotoPickerActivity;
-import me.iwf.photopicker.utils.PhotoPickerIntent;
 
 public class MainActivity extends SwipeBackActivity {
 
-    @Bind(R.id.image_choose)
-    ImageView imageChoose;
-    @Bind(R.id.photoMultiSelect)
-    PhotoMultiSelectView photoMultiSelect;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        photoMultiSelect();
     }
 
     /**
-     * 图片选择，单选/多选
+     * 图片选择
      */
-    @OnClick(R.id.image_choose)
-    public void imageChoose() {
-        PhotoPickerIntent intent = new PhotoPickerIntent(MainActivity.this);
-        intent.setShowCamera(true);
-        intent.setTailoring(true);
-        intent.setPhotoCount(1);
-        intent.setImageSelect(new PhotoPickerActivity.CallbackHead() {
-            @Override
-            public void selectResults(Bitmap bitmap, List<String> selectedPhotos) {
-                //注意:如果选择的是多张图片的话bitmap为null,只返回selectedPhotos
-                if (bitmap != null) {
-                    imageChoose.setImageBitmap(bitmap);
-                } else {
-                    Toast.makeText(MainActivity.this, "选择了" + selectedPhotos.size() + "张照片", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-        startActivity(intent);
+    @OnClick(R.id.btn_image_choose)
+    public void btn_image_choose() {
+        startActivity(new Intent(this, ImageChooseActivity.class));
     }
 
-    /**
-     * 图片多选
-     * 注意需要实现onActivityResult
-     * view
-     */
-    private void photoMultiSelect() {
-        photoMultiSelect.setMultiSize(8);
-        //photoMultiSelect.getPhotos();//获取选择的图片
-    }
 
     /**
      * 权限请求,多个权限后面追加
@@ -93,11 +60,24 @@ public class MainActivity extends SwipeBackActivity {
                 });
     }
 
+    /**
+     * 页面标签切换
+     */
+    @OnClick(R.id.btn_tablayout)
+    public void tabLayout() {
+        startActivity(new Intent(this, TabLayoutActivity.class));
+    }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        //调用view选择多张图片时
-        photoMultiSelect.onActivityResult(requestCode, resultCode, data);
+    /**
+     * MD风格dialog
+     */
+    @OnClick(R.id.btn_dialog)
+    public void MDDialog() {
+        startActivity(new Intent(this, MDDialogActivity.class));
+    }
+
+    @OnClick(R.id.btn_okhttp)
+    public void OKHttp() {
+        startActivity(new Intent(this, OKHttpActivity.class));
     }
 }

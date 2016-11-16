@@ -31,6 +31,6 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         //app奔溃收集
-        CustomActivityOnCrash.install(this, false);
+        CustomActivityOnCrash.install(this, true);
     }
 }
