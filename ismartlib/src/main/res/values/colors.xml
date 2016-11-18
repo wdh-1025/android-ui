@@ -4,4 +4,6 @@
 
     <color name="black">#000000</color> <!--黑-->
     <color name="gray">#dcdcdc</color>
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="btn_down_color">#D0D0D0</drawable>
 </resources>

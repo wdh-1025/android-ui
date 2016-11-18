@@ -251,14 +251,16 @@ public class DisplayUtil {
     }
 
     /**
-     * 设置view的宽度,高度类似，自己扩展
+     * 设置view的宽度,高度
+     * 注意这里的父布局是LinearLayout，根据自身而定
      *
-     * @param width
      * @param view
+     * @param width
      */
-    public static void setViewWidth(int width, View view) {
+    public static void setViewWidthHeight(View view, int width, int height) {
         LinearLayout.LayoutParams linearParams = (LinearLayout.LayoutParams) view.getLayoutParams();
         linearParams.width = width;
+        linearParams.height = height;
         view.setLayoutParams(linearParams);
     }
 

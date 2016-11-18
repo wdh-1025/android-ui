@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ismartlib.ui.view.switchbutton.SwitchButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:kswThumbColor="@color/colorPrimary"
+        app:kswTintColor="@color/YOUR_APP_THEME" />
+
+    <com.ismartlib.ui.view.progress.NumberProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:max="100"
+        app:progress="50"
+        app:progress_reached_color="@color/YOUR_APP_THEME"
+        app:progress_text_color="#b3b3b3"
+        app:progress_unreached_color="#eeeeee" />
+
+    <com.ismartlib.ui.view.checkbox.CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:color_checked="@color/YOUR_APP_THEME"
+        app:color_unchecked="#eeeeee"
+        app:duration="100" />
+
+    <com.ismartlib.ui.view.image.RoundImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/camera_default"
+        app:borderRadius="10px"
+        app:type="round" />
+
+    <com.ismartlib.ui.view.item.LeftRightText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftIconSize="12dp"
+        app:leftRightPadding="5dp"
+        app:leftText="邮箱"
+        app:rightText="924686754@qq.com"
+        app:topBottomPadding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_top"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="上(100)" />
+
+        <Button
+            android:id="@+id/btn_bottom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="下(100)" />
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="左(100)" />
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="右(100)" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="理论上所有view都可以很简单的实现如丝滑般顺滑平移" />
+
+    <com.ismartlib.ui.widget.SlidingLinearLayout
+        android:id="@+id/layout_sliding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是会平移的View" />
+    </com.ismartlib.ui.widget.SlidingLinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/btn_down_color" android:state_enabled="true" android:state_pressed="true" />
+    <!--按下时的效果-->
+    <item android:drawable="@drawable/white" android:state_enabled="true" />
+    <!--正常状态的效果-->
+</selector>

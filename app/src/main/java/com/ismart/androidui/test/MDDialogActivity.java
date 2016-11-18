@@ -1,6 +1,7 @@
 package com.ismart.androidui.test;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -12,6 +13,7 @@ import com.ismartlib.ui.dialog.DialogOnItemClickListener;
 import com.ismartlib.ui.dialog.MDAlertDialog;
 import com.ismartlib.ui.dialog.MDEditDialog;
 import com.ismartlib.ui.dialog.MDSelectionDialog;
+import com.ismartlib.ui.dialog.SheetDialog;
 
 import java.util.ArrayList;
 
@@ -43,7 +45,7 @@ public class MDDialogActivity extends SwipeBackActivity {
                 .setLeftButtonText("不发送")
                 .setLeftButtonTextColor(R.color.gray)
                 .setRightButtonText("发送")
-                .setRightButtonTextColor(R.color.gray)
+                .setRightButtonTextColor(R.color.black)
                 .setTitleTextSize(16)
                 .setContentTextSize(14)
                 .setButtonTextSize(14)
@@ -87,18 +89,18 @@ public class MDDialogActivity extends SwipeBackActivity {
                 .setTitleText("设置密码")
                 .setTitleTextSize(20)
                 .setTitleTextColor(R.color.black_light)
-                .setContentText("password")
+                .setContentText("xxxx")
                 .setContentTextSize(18)
                 .setMaxLength(7)
                 .setHintText("最少8位")
                 .setMaxLines(1)
-                .setContentTextColor(R.color.colorPrimary)
+                .setContentTextColor(R.color.black)
                 .setButtonTextSize(14)
-                .setLeftButtonTextColor(R.color.colorPrimary)
+                .setLeftButtonTextColor(R.color.gray)
                 .setLeftButtonText("取消")
-                .setRightButtonTextColor(R.color.colorPrimary)
+                .setRightButtonTextColor(R.color.black)
                 .setRightButtonText("确定")
-                .setLineColor(R.color.colorPrimary)
+                .setLineColor(R.color.gray)
                 .setOnclickListener(new MDEditDialog.OnClickEditDialogListener() {
                     @Override
                     public void clickLeftButton(View view, String editText) {
@@ -112,7 +114,7 @@ public class MDDialogActivity extends SwipeBackActivity {
                         dialog3.dismiss();
                     }
                 })
-                .setMinHeight(0.3f)
+                .setMinHeight(0.25f)
                 .setWidth(0.8f)
                 .build();
     }
@@ -133,5 +135,19 @@ public class MDDialogActivity extends SwipeBackActivity {
     @OnClick(R.id.btn_md_edit)
     public void MDEdit() {
         dialog3.show();
+    }
+
+
+    private View bottomView;
+    private SheetDialog bottomDialog;
+
+    @OnClick(R.id.btn_sheet_dialog)
+    public void BottomSheetDialog() {
+        if (bottomView == null) {
+            bottomView = LayoutInflater.from(this).inflate(R.layout.activity_main, null);
+            bottomDialog = new SheetDialog(this);
+            bottomDialog.setView(bottomView);
+        }
+        bottomDialog.show();
     }
 }

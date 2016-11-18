@@ -10,6 +10,7 @@ import com.ismart.androidui.test.ImageChooseActivity;
 import com.ismart.androidui.test.MDDialogActivity;
 import com.ismart.androidui.test.OKHttpActivity;
 import com.ismart.androidui.test.TabLayoutActivity;
+import com.ismart.androidui.test.ViewActivity;
 import com.ismartlib.framework.permissions.Permission;
 import com.ismartlib.framework.permissions.PermissionsResult;
 import com.ismartlib.framework.permissions.ResultCallBack;
@@ -80,4 +81,10 @@ public class MainActivity extends SwipeBackActivity {
     public void OKHttp() {
         startActivity(new Intent(this, OKHttpActivity.class));
     }
+
+    @OnClick(R.id.btn_view)
+    public void View() {
+        startActivity(new Intent(this, ViewActivity.class));
+    }
+
 }

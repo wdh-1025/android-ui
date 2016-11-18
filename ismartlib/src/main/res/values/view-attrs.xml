@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--SwitchButton-->
+    <declare-styleable name="SwitchButton">
+        <attr name="kswThumbDrawable" format="reference" />
+        <attr name="kswThumbColor" format="color|reference" />
+        <attr name="kswThumbMargin" format="dimension|reference" />
+        <attr name="kswThumbMarginTop" format="dimension|reference" />
+        <attr name="kswThumbMarginBottom" format="dimension|reference" />
+        <attr name="kswThumbMarginLeft" format="dimension|reference" />
+        <attr name="kswThumbMarginRight" format="dimension|reference" />
+        <attr name="kswThumbWidth" format="dimension|reference" />
+        <attr name="kswThumbHeight" format="dimension|reference" />
+        <attr name="kswThumbRadius" format="dimension|reference" />
+        <attr name="kswBackRadius" format="dimension|reference" />
+        <attr name="kswBackDrawable" format="reference" />
+        <attr name="kswBackColor" format="color|reference" />
+        <attr name="kswFadeBack" format="boolean" />
+        <attr name="kswBackMeasureRatio" format="float" />
+        <attr name="kswAnimationDuration" format="integer" />
+        <attr name="kswTintColor" format="color|reference" />
+        <attr name="kswTextOn" format="string" />
+        <attr name="kswTextOff" format="string" />
+        <attr name="kswTextMarginH" format="dimension" />
+    </declare-styleable>
+    <!--华丽的分割线- - - - - - - - - - - - - - - - - - - - - - - -  &#45;-->
+    <!--华丽的分割线- - - - - - - - - - - - - - - - - - - - - - - -  &#45;-->
+    <!--华丽的分割线- - - - - - - - - - - - - - - - - - - - - - - -  &#45;-->
+    <!--自定义进度条-->
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_offset" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference" />
+    </declare-styleable>
+    <!--华丽的分割线- - - - - - - - - - - - - - - - - - - - - - - -  &#45;-->
+    <!--华丽的分割线- - - - - - - - - - - - - - - - - - - - - - - -  &#45;-->
+    <!--华丽的分割线- - - - - - - - - - - - - - - - - - - - - - - -  &#45;-->
+    <!--CheckBox -->
+    <declare-styleable name="SmoothCheckBox">
+        <attr name="duration" format="integer" />
+        <attr name="stroke_width" format="dimension" />
+        <attr name="color_tick" format="color" />
+        <attr name="color_checked" format="color" />
+        <attr name="color_unchecked" format="color" />
+        <attr name="color_unchecked_stroke" format="color" />
+    </declare-styleable>
+    <!--华丽的分割线- - - - - - - - - - - - - - - - - - - - - - - -  &#45;-->
+    <!--华丽的分割线- - - - - - - - - - - - - - - - - - - - - - - -  &#45;-->
+    <!--华丽的分割线- - - - - - - - - - - - - - - - - - - - - - - -  &#45;-->
+    <!--圆形图片-->
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+    <!--华丽的分割线- - - - - - - - - - - - - - - - - - - - - - - -  &#45;-->
+    <!--华丽的分割线- - - - - - - - - - - - - - - - - - - - - - - -  &#45;-->
+    <!--华丽的分割线- - - - - - - - - - - - - - - - - - - - - - - -  &#45;-->
+    <!--通用布局item-->
+    <declare-styleable name="ItemLeftRightText">
+        <attr name="leftIcon" format="reference" />
+        <attr name="leftIconSize" format="dimension" />
+        <attr name="leftText" format="string" />
+        <attr name="leftTextColor" format="color" />
+        <attr name="rightText" format="string" />
+        <attr name="rightIcon" format="reference" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightIconSize" format="dimension" />
+        <attr name="leftRightPadding" format="dimension" />
+        <attr name="topBottomPadding" format="dimension" />
+    </declare-styleable>
+</resources>

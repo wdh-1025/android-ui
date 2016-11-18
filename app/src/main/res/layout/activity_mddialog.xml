@@ -22,4 +22,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="MD风格编辑框" />
+
+    <Button
+        android:id="@+id/btn_sheet_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BottomSheetDialog" />
 </LinearLayout>
