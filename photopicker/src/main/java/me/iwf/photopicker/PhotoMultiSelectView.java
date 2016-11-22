@@ -130,51 +130,7 @@ public class PhotoMultiSelectView extends FrameLayout {
         }
     }
 
-  /*  @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        ArrayList<String> photos = null;
-        if (resultCode == -1 && requestCode == 1) {
-            if (data != null) {
-                photos = data.getStringArrayListExtra(PhotoPickerActivity.KEY_SELECTED_PHOTOS);
-            }
-            mData.clear();
-            //加入用户选择的照片
-            if (photos != null) {
-                for (int i = 0; i < photos.size(); i++) {
-                    mData.add(new ImageMulti(photos.get(i), 1));
-                }
-                //删除后还是会加载这里，妹的
-                if (!photoAdapter.isDelete) {
-                    for (int i = 0; i < imagelist.size(); i++) {
-                        if (!judge(imagelist.get(i))) {
-                            mData.add(new ImageMulti(imagelist.get(i), 1));
-                        }
-                    }
-                } else {
-                    //重新保存删除后的照片
-                    imagelist.clear();
-                    for (int i = 0; i < mData.size(); i++) {
-                        imagelist.add(mData.get(i).getImagePath());
-                    }
-                    photoAdapter.isDelete = false;
-                }
-                mData.add(new ImageMulti(null, 2));
-            }
-            //保存选择的照片
-            imagelist.clear();
-            for (int i = 0; i < mData.size() - 1; i++) {
-                imagelist.add(mData.get(i).getImagePath());
-            }
-            //为0时添加1项拍照项
-            if (photoAdapter.getItemCount() == 0) {
-                imagelist.clear();
-                mData.add(new ImageMulti(null, 2));
-            }
 
-            setRecyclerViewHeight(recyclerView);
-            photoAdapter.notifyDataSetChanged();
-        }
-    }*/
 
     private boolean judge(String str) {
         for (int i = 0; i < mData.size(); i++) {

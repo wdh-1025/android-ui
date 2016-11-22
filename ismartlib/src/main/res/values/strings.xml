@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">ismartUI</string>
 
+    <string name="errorInfo">\n呜呜，页面出错了\n点击重新加载</string>
+    <string name="nocontent">暂无内容</string>
+    <string name="pull_load_more">上拉加载更多</string>
+    <string name="loading">加载中...</string>
+    <string name="loading_no_more">已加载全部</string>
+    <string name="error_view_no_data">暂无内容</string>
+
 </resources>

@@ -24,7 +24,8 @@
         <activity android:name=".test.ImageChooseActivity" />
         <activity android:name=".test.MDDialogActivity" />
         <activity android:name=".test.OKHttpActivity" />
-        <activity android:name=".test.ViewActivity"></activity>
+        <activity android:name=".test.ViewActivity" />
+        <activity android:name=".test.ListActivity"></activity>
     </application>
 
 </manifest>

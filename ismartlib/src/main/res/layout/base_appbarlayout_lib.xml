@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="47dp"
+    app:elevation="0dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0CB8F6"
+        android:elevation="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:id="@+id/rl_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/layout_left"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/toolbar_left_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/layout_right1"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_bg_transparent"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/toolbar_right_image1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_right2"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_bg_transparent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/toolbar_right_image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/toolbar_right_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="17sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/layout_left"
+                android:layout_toRightOf="@+id/layout_left"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>

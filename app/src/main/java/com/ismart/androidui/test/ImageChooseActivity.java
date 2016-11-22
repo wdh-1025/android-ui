@@ -7,7 +7,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.ismart.androidui.R;
-import com.ismartlib.framework.swipebacklayout.app.SwipeBackActivity;
+import com.ismartlib.ui.base.ui.BaseLayoutActivity;
+import com.ismartlib.ui.base.utils.ListSettings;
 
 import java.util.List;
 
@@ -21,7 +22,7 @@ import me.iwf.photopicker.utils.PhotoPickerIntent;
 /**
  * 图片选择
  */
-public class ImageChooseActivity extends SwipeBackActivity {
+public class ImageChooseActivity extends BaseLayoutActivity {
     @Bind(R.id.image_choose)
     ImageView imageChoose;
     @Bind(R.id.photoMultiSelect)
@@ -30,9 +31,19 @@ public class ImageChooseActivity extends SwipeBackActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_image_choose);
+        setMyContentView(R.layout.activity_image_choose);
         ButterKnife.bind(this);
         photoMultiSelect();
+        showNoData();
+        setReloadCallBack(new ReloadCallBack() {
+            @Override
+            public void Reload() {
+                hideEmptyLayout();
+            }
+        });
+
+        ListSettings settings = new ListSettings();
+        settings.setRlNodataMaskBackColor(2);
     }
 
     /**

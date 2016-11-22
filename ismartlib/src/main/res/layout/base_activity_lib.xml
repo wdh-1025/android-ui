@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0CB8F6"
+        android:orientation="vertical" />
+
+
+    <include layout="@layout/base_appbarlayout_lib" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/mContentView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ViewStub
+            android:id="@+id/emptyLayoutStub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inflatedId="@+id/emptyLayout"
+            android:layout="@layout/base_viewstub_lib" />
+
+    </FrameLayout>
+
+</LinearLayout>

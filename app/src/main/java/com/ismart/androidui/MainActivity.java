@@ -7,6 +7,7 @@ import android.provider.MediaStore;
 import android.widget.Toast;
 
 import com.ismart.androidui.test.ImageChooseActivity;
+import com.ismart.androidui.test.ListActivity;
 import com.ismart.androidui.test.MDDialogActivity;
 import com.ismart.androidui.test.OKHttpActivity;
 import com.ismart.androidui.test.TabLayoutActivity;
@@ -86,5 +87,12 @@ public class MainActivity extends SwipeBackActivity {
     public void View() {
         startActivity(new Intent(this, ViewActivity.class));
     }
+
+    @OnClick(R.id.btn_list)
+    public void List() {
+        startActivity(new Intent(this, ListActivity.class));
+    }
+
+
 
 }
