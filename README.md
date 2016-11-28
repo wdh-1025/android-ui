@@ -45,4 +45,4 @@
                     }
                 });
 ```
-[其它请自行下载demo查看](https://github.com/wdh-1025/android-ui/raw/master/test.apk)
+[其它请自行下载demo查看](http://bmob-cdn-7815.b0.upaiyun.com/2016/11/28/3655363f40426023800e8e12070e56d7.apk)
