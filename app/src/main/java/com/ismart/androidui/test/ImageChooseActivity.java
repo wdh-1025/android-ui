@@ -3,6 +3,8 @@ package com.ismart.androidui.test;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -39,6 +41,13 @@ public class ImageChooseActivity extends BaseLayoutActivity {
             @Override
             public void Reload() {
                 hideEmptyLayout();
+                Snackbar.make(findViewById(R.id.activity_image_choose), "提示消息", Snackbar.LENGTH_SHORT)
+                        .setAction("成功", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Toast.makeText(ImageChooseActivity.this, "加载成功", Toast.LENGTH_SHORT).show();
+                            }
+                        }).show();
             }
         });
 
@@ -86,3 +95,11 @@ public class ImageChooseActivity extends BaseLayoutActivity {
         photoMultiSelect.onActivityResult(requestCode, resultCode, data);
     }
 }
+/*
+Snackbar.make(findViewById(R.id.activity_image_choose), "文本", Snackbar.LENGTH_SHORT)
+        .setAction("操作", new View.OnClickListener() {
+@Override
+public void onClick(View v) {
+        Toast.makeText(ImageChooseActivity.this, "2", Toast.LENGTH_SHORT).show();
+        }
+        }).show();*/

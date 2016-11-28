@@ -43,4 +43,5 @@ public class ViewActivity extends SwipeBackActivity {
         layoutSliding.ScrollToX(layoutSliding.getCurrX(), -200);
     }
 
+
 }

@@ -32,7 +32,7 @@ public class ListActivity extends BaseListActivity<String> {
             public void run() {
                 List<String> mData = new ArrayList<>();
                 for (int i = 0; i < 15; i++) {
-                    mData.add("我ia沙发哈撒" + i + "自行车自行车");
+                    mData.add("我沙发哈撒" + i + "自行车自行车");
                 }
                 onDataLoaded(mData);
             }
