@@ -45,4 +45,4 @@
                     }
                 });
 ```
-[其它请自行下载demo查看](https://github.com/wdh-1025/android-ui)
+[其它请自行下载demo查看](https://github.com/wdh-1025/android-ui/raw/master/test.apk)
