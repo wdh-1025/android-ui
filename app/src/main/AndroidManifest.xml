@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.BODY_SENSORS" />
 
-
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -26,7 +25,8 @@
         <activity android:name=".test.MDDialogActivity" />
         <activity android:name=".test.OKHttpActivity" />
         <activity android:name=".test.ViewActivity" />
-        <activity android:name=".test.ListActivity"></activity>
+        <activity android:name=".test.ListActivity" />
+        <activity android:name=".test.BannerActivity" />
     </application>
 
 </manifest>

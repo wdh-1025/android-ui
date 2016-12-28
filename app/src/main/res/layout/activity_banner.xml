@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.ismartlib.ui.banner.Banner
+                android:id="@+id/banner1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <com.ismartlib.ui.banner.Banner
+                android:id="@+id/banner2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp" />
+
+            <com.ismartlib.ui.banner.Banner
+                android:id="@+id/banner3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp" />
+
+            <com.ismartlib.ui.banner.Banner
+                android:id="@+id/banner4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp" />
+
+            <com.ismartlib.ui.banner.Banner
+                android:id="@+id/banner5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp" />
+
+            <com.ismartlib.ui.banner.Banner
+                android:id="@+id/banner6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp" />
+
+            <com.ismartlib.ui.banner.Banner
+                android:id="@+id/banner7"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp" />
+
+
+            <com.ismartlib.ui.banner.Banner
+                android:id="@+id/banner8"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="下面是自定义属性" />
+
+            <com.ismartlib.ui.banner.Banner
+                android:id="@+id/banner9"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                app:indicator_drawable_selected="@drawable/blue_radius"
+                app:indicator_drawable_unselected="@drawable/white_radius"
+                app:indicator_height="8dp"
+                app:indicator_margin="4dp"
+                app:indicator_width="8dp" />
+
+            <com.ismartlib.ui.banner.Banner
+                android:id="@+id/banner10"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                app:indicator_drawable_selected="@color/YOUR_APP_THEME"
+                app:indicator_drawable_unselected="@android:color/white"
+                app:indicator_height="4dp"
+                app:indicator_margin="4dp"
+                app:indicator_width="20dp" />
+
+            <com.ismartlib.ui.banner.Banner
+                android:id="@+id/banner11"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                app:title_background="#555CB85C"
+                app:title_height="30dp"
+                app:title_textcolor="@android:color/white"
+                app:title_textsize="10sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

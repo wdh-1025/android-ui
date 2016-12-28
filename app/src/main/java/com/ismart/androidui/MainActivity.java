@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.widget.Toast;
 
+import com.ismart.androidui.test.BannerActivity;
 import com.ismart.androidui.test.ImageChooseActivity;
 import com.ismart.androidui.test.ListActivity;
 import com.ismart.androidui.test.MDDialogActivity;
@@ -93,6 +94,10 @@ public class MainActivity extends SwipeBackActivity {
         startActivity(new Intent(this, ListActivity.class));
     }
 
+    @OnClick(R.id.btn_banner)
+    public void Banner() {
+        startActivity(new Intent(this, BannerActivity.class));
+    }
 
 
 }

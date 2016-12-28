@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.smklib.view.tablayout.view.SlidingTabLayout
+            <com.ismartlib.ui.view.tablayout.view.SlidingTabLayout
                 android:id="@+id/tl_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
                 tl:tl_underline_gravity="TOP"
                 tl:tl_underline_height="1dp" />
 
-            <com.smklib.view.tablayout.view.SlidingTabLayout
+            <com.ismartlib.ui.view.tablayout.view.SlidingTabLayout
                 android:id="@+id/tl_2"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -51,7 +51,7 @@
                 tl:tl_underline_color="#1A000000"
                 tl:tl_underline_height="1dp" />
 
-            <com.smklib.view.tablayout.view.SlidingTabLayout
+            <com.ismartlib.ui.view.tablayout.view.SlidingTabLayout
                 android:id="@+id/tl_3"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -60,7 +60,7 @@
                 tl:tl_textBold="true"
                 tl:tl_textsize="14sp" />
 
-            <com.smklib.view.tablayout.view.SlidingTabLayout
+            <com.ismartlib.ui.view.tablayout.view.SlidingTabLayout
                 android:id="@+id/tl_4"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -69,14 +69,14 @@
                 tl:tl_tab_width="95dp"
                 tl:tl_textsize="15sp" />
 
-            <com.smklib.view.tablayout.view.SlidingTabLayout
+            <com.ismartlib.ui.view.tablayout.view.SlidingTabLayout
                 android:id="@+id/tl_5"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:background="#F6CE59"
                 tl:tl_indicator_width="10dp" />
 
-            <com.smklib.view.tablayout.view.SlidingTabLayout
+            <com.ismartlib.ui.view.tablayout.view.SlidingTabLayout
                 android:id="@+id/tl_6"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -85,7 +85,7 @@
                 tl:tl_indicator_height="4dp"
                 tl:tl_indicator_width="4dp" />
 
-            <com.smklib.view.tablayout.view.SlidingTabLayout
+            <com.ismartlib.ui.view.tablayout.view.SlidingTabLayout
                 android:id="@+id/tl_7"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -94,7 +94,7 @@
                 tl:tl_indicator_height="3dp"
                 tl:tl_indicator_width="10dp" />
 
-            <com.smklib.view.tablayout.view.SlidingTabLayout
+            <com.ismartlib.ui.view.tablayout.view.SlidingTabLayout
                 android:id="@+id/tl_8"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -102,7 +102,7 @@
                 tl:tl_indicator_color="#eeeeee"
                 tl:tl_indicator_style="TRIANGLE" />
 
-            <com.smklib.view.tablayout.view.SlidingTabLayout
+            <com.ismartlib.ui.view.tablayout.view.SlidingTabLayout
                 android:id="@+id/tl_9"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -113,7 +113,7 @@
                 tl:tl_indicator_margin_right="2dp"
                 tl:tl_indicator_style="BLOCK" />
 
-            <com.smklib.view.tablayout.view.SlidingTabLayout
+            <com.ismartlib.ui.view.tablayout.view.SlidingTabLayout
                 android:id="@+id/tl_10"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"

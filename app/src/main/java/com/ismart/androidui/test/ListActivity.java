@@ -10,7 +10,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListActivity extends BaseListActivity<String> {
-
+    /**
+     * 如果需要自定义页面样式需要重写getBaseSettings
+     * 如果设置自定义布局setCustomLayoutId需要注意xml需要包含
+     * id
+     * recyclerview(SwipeRefreshLayout)
+     * id
+     * swiperefreshlayout(SwipeRefreshLayout)
+     */
 
     @Override
     protected void OnViewCreated() {
@@ -43,6 +50,5 @@ public class ListActivity extends BaseListActivity<String> {
     protected BaseListAdapter<String> getListAdapter() {
         return new ATListAdapter(this);
     }
-
 
 }
