@@ -27,6 +27,7 @@
     }
 ```
 *  权限申请
+注意记得完事后调用Permission.getInstance(this).unresults();防止内存泄漏
 ``` android
     Permission.getInstance(this)
                 .requestPermission(Manifest.permission.CAMERA)

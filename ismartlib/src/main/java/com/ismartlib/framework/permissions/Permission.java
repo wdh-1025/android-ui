@@ -75,17 +75,29 @@ public class Permission {
     }
 
     /**
+     * 将对象置为空，防止内存泄漏
+     *
+     * @return
+     */
+    public Permission unresults() {
+        mResultCallBack = null;
+        return this;
+    }
+
+    /**
      * 是否获取到该权限
      *
      * @return
      */
-    @TargetApi(Build.VERSION_CODES.M)
     public boolean getPermisionState(String permission) {
-        if ((mContext.checkSelfPermission(permission) == PackageManager.PERMISSION_GRANTED)) {
-            //没有权限的
+        if (Build.VERSION.SDK_INT >= 23) {
+            if ((mContext.checkSelfPermission(permission) == PackageManager.PERMISSION_GRANTED)) {
+                return true;
+            }
+            return false;
+        } else {
             return true;
         }
-        return false;
     }
 
     /**

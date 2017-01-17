@@ -55,6 +55,7 @@ public class MainActivity extends SwipeBackActivity {
                             Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                             startActivityForResult(intent, 1);
                             Toast.makeText(MainActivity.this, "有权限啦", Toast.LENGTH_SHORT).show();
+                            Permission.getInstance(MainActivity.this).unresults();
                         } else {
                             //被拒绝
                             Toast.makeText(MainActivity.this, "用户拒绝了你的申请", Toast.LENGTH_SHORT).show();
