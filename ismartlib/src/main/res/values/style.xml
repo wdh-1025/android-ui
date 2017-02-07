@@ -19,4 +19,7 @@
         <item name="android:indeterminateOnly">true</item>
     </style>
 
+    <style name="AppThemeLib" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
 </resources>

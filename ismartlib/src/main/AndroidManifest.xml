@@ -10,7 +10,12 @@
             android:label="app发生错误" />
         <activity
             android:name=".framework.permissions.RequestActivity"
+            android:label="权限请求"
             android:theme="@style/transcutestyle" />
+        <activity
+            android:name="com.ismartlib.ui.photoview.activity.PhotoViewActivity"
+            android:label="图片预览"
+            android:theme="@style/AppThemeLib" />
     </application>
 
 </manifest>
