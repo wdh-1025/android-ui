@@ -46,4 +46,4 @@
                     }
                 });
 ```
-[其它请自行下载demo查看](http://bmob-cdn-7815.b0.upaiyun.com/2016/12/28/769454d2406a4fee8062e221916147c9.apk)
+[其它请自行下载demo查看](https://github.com/wdh-1025/android-ui/raw/master/app/apk/demo.apk)
