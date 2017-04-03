@@ -18,16 +18,18 @@ public abstract class OkHttpRequest {
     protected Map<String, String> params;
     protected Map<String, String> headers;
     protected int id;
+    protected boolean cache;
 
     protected Request.Builder builder = new Request.Builder();
 
     protected OkHttpRequest(String url, Object tag,
-                            Map<String, String> params, Map<String, String> headers, int id) {
+                            Map<String, String> params, Map<String, String> headers, int id, boolean cache) {
         this.url = url;
         this.tag = tag;
         this.params = params;
         this.headers = headers;
         this.id = id;
+        this.cache = cache;
 
         if (url == null) {
             Exceptions.illegalArgument("url can not be null.");
@@ -74,6 +76,10 @@ public abstract class OkHttpRequest {
             headerBuilder.add(key, headers.get(key));
         }
         builder.headers(headerBuilder.build());
+    }
+
+    public boolean isCache() {
+        return cache;
     }
 
     public int getId() {

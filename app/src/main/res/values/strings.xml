@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ismart-android-ui</string>
+    <string name="title_activity_green_dao">GreenDaoActivity</string>
 </resources>

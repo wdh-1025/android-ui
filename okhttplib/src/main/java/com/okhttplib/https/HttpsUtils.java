@@ -64,7 +64,7 @@ public class HttpsUtils
         }
     }
 
-    private class UnSafeHostnameVerifier implements HostnameVerifier
+    private static class UnSafeHostnameVerifier implements HostnameVerifier
     {
         @Override
         public boolean verify(String hostname, SSLSession session)

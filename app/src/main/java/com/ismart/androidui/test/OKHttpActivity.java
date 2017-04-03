@@ -7,6 +7,7 @@ import android.widget.TextView;
 import com.ismart.androidui.R;
 import com.ismartlib.utils.L;
 import com.okhttplib.OkHttpUtils;
+import com.okhttplib.ResponseResult;
 import com.okhttplib.callback.StringCallback;
 
 import butterknife.Bind;
@@ -31,20 +32,19 @@ public class OKHttpActivity extends AppCompatActivity {
         textContent.setText("请求中...");
         OkHttpUtils
                 .get()
-                .url("http://www.baidu.com")
-                .addParams("name", "name")
+                .url("http://route.showapi.com/64-21")
                 .tag(this)
+                .cache(true)
                 .build()
                 .execute(new StringCallback() {
                     @Override
                     public void onError(Call call, Exception e, int id) {
                         L.i("", "");
-                        textContent.setText(e.toString());
                     }
 
                     @Override
-                    public void onResponse(String response, int id) {
-                        textContent.setText(response);
+                    public void onResponse(ResponseResult response, int id) {
+                        textContent.setText("是否来自缓存：" + response.isCache() + " content：" + response.getResult().toString());
                         L.i("", "");
                     }
                 });

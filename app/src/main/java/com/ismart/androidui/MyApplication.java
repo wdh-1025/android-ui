@@ -1,6 +1,7 @@
 package com.ismart.androidui;
 
 import android.app.Application;
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Environment;
 
@@ -10,8 +11,13 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
+import com.okhttplib.OkHttpUtils;
+import com.okhttplib.cache.CacheConfig;
 
 import java.io.File;
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.OkHttpClient;
 
 /**
  * 　　　┏┓　　　┏┓
@@ -36,12 +42,26 @@ import java.io.File;
  * Email:924686754@qq.com
  */
 public class MyApplication extends Application {
+    private static Context mContext;
+    public static final String APP_SDCARD_DIR = Environment.getExternalStorageDirectory().getPath()
+            + "/ismart-android-ui/";
+
     @Override
     public void onCreate() {
         super.onCreate();
+        mContext = getApplicationContext();
         //app奔溃收集
         CustomActivityOnCrash.install(this, true);
         configUniversalImageLoader();
+        //okhttp
+        OkHttpClient okHttpClient = new OkHttpClient.Builder()
+                .connectTimeout(20000, TimeUnit.MILLISECONDS)
+                .readTimeout(20000, TimeUnit.MILLISECONDS)
+                .build();
+        //配置缓存
+        CacheConfig cacheConfig = new CacheConfig();
+        cacheConfig.setCache_path(APP_SDCARD_DIR).setDisk_size(5 * (1024 * 1024));
+        OkHttpUtils.initClient(okHttpClient, cacheConfig);
     }
 
     private void configUniversalImageLoader() {
@@ -62,6 +82,14 @@ public class MyApplication extends Application {
                         + "/ismart-lipu/" + "UILCache")))// 自定义缓存路径
                 .build();//
         ImageLoader.getInstance().init(config);
+    }
+
+    private void initGreenDao() {
+    }
+
+
+    public static Context getContext() {
+        return mContext;
     }
 
 }
