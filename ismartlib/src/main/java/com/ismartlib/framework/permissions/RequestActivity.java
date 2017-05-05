@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Process;
+import android.support.v4.content.PermissionChecker;
 
 /**
  * 　　　┏┓　　　┏┓
@@ -51,7 +53,8 @@ public class RequestActivity extends Activity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         Permission permission = Permission.getInstance(this);
         for (int i = 0; i < permissions.length; i++) {
-            boolean granted = grantResults[i] == PackageManager.PERMISSION_GRANTED;
+            // boolean granted = grantResults[i] == PackageManager.PERMISSION_GRANTED;
+            boolean granted = (PackageManager.PERMISSION_GRANTED == PermissionChecker.checkPermission(this, permissions[i], Process.myPid(), Process.myUid(), getPackageName()));
             permission.setPermission(permissions[i], granted);
         }
         finish();

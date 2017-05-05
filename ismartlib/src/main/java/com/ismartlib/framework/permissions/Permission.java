@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
+import android.os.Process;
+import android.support.v4.content.PermissionChecker;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -109,7 +111,7 @@ public class Permission {
         List<String> permissionList = new ArrayList<>();
         if (mPermissions != null) {
             for (int i = 0; i < mPermissions.length; i++) {
-                if (!(mContext.checkSelfPermission(mPermissions[i]) == PackageManager.PERMISSION_GRANTED)) {
+                if (!(PermissionChecker.checkPermission(mContext, mPermissions[i], Process.myPid(), Process.myUid(), mContext.getPackageName()) == PackageManager.PERMISSION_GRANTED)) {
                     //没有权限的
                     permissionList.add(mPermissions[i]);
                 } else {
