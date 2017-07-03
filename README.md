@@ -1,4 +1,6 @@
 # android-ui
+<font color=red size=10>该项目已经停止维护，请移步到[这里](https://github.com/wdh-1025/BaseAndroid)</font>
+
 帮助快速开发android，项目集成6.0权限申请，常用dialog，本地图片选择等...
 
 `项目部分引用第三方开源库，感谢开源`
